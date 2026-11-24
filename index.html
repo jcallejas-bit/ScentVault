@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScentVault | My Fragrance Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>ScentVault</h1>
+        <p>Your Personal Fragrance Collection</p>
+    </header>
+
+    <main>
+
+        <section class="add-fragrance">
+            <h2>Add a Fragrance</h2>
+
+            <form id="fragrance-form">
+
+                <label for="name">Fragrance Name</label>
+                <input type="text" id="name" placeholder="e.g. Sauvage">
+
+                <label for="brand">Brand</label>
+                <input type="text" id="brand" placeholder="e.g. Dior">
+
+                <label for="type">Fragrance Type</label>
+                <select id="type">
+                    <option value="">Select a type</option>
+                    <option value="EDT">Eau de Toilette (EDT)</option>
+                    <option value="EDP">Eau de Parfum (EDP)</option>
+                    <option value="Parfum">Parfum</option>
+                    <option value="Extrait">Extrait de Parfum</option>
+                </select>
+
+                <label for="season">Season</label>
+                <select id="season">
+                    <option value="">Select a season</option>
+                    <option value="Spring">Spring</option>
+                    <option value="Summer">Summer</option>
+                    <option value="Fall">Fall</option>
+                    <option value="Winter">Winter</option>
+                    <option value="All Seasons">All Seasons</option>
+                </select>
+
+                <label for="occasion">Occasion</label>
+                <select id="occasion">
+                    <option value="">Select an occasion</option>
+                    <option value="Everyday">Everyday</option>
+                    <option value="Work">Work</option>
+                    <option value="Date Night">Date Night</option>
+                    <option value="Formal">Formal</option>
+                    <option value="Special Occasion">Special Occasion</option>
+                </select>
+
+                <button type="submit">Save Fragrance</button>
+
+                <p id="form-message" role="status"></p>
+
+            </form>
+        </section>
+
+        <section class="collection">
+            <h2>My Collection</h2>
+            <div id="fragrance-list">
+                <p>No fragrances added yet.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
